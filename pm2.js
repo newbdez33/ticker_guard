@@ -6,6 +6,6 @@
   setTimeout(function worker() {
     console.log("Restarting app...");
     pm2.restart('ticker', function() {});
-    setTimeout(worker, 600000);
-    }, 600000);
+    setTimeout(worker, 30000);
+    }, 30000);
   });
